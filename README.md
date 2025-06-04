@@ -1,9 +1,9 @@
 # parcial2Java
 
-Proyecto: CRUD de Productos y Pedidos
+## Proyecto: CRUD de Productos y Pedidos
 Aplicación en Java que se conecta a una base de datos MySQL para gestionar productos y pedidos. Permite crear, leer, actualizar y eliminar registros de manera sencilla.
 
-🛠 Tecnologías utilizadas
+### 🛠 Tecnologías utilizadas
 Java 17+
 
 MySQL
@@ -14,7 +14,9 @@ Gradle
 
 IDE sugerido: IntelliJ / Eclipse / NetBeans
 
-🗃️ Funcionalidades principales
+--
+
+### 🗃️ Funcionalidades principales
 Listar productos
 
 Listar pedidos
@@ -22,23 +24,26 @@ Listar pedidos
 Crear nuevos productos/pedidos
 
 Eliminar productos/pedidos
+--
 
-⚙️ Requisitos
+### ⚙️ Requisitos
 Java 17 o superior
 
 MySQL Server (local o remoto)
 
 Conexión JDBC configurada (url, user, password)
 
+--
 
-Configuración inicial
+#### Configuración inicial
 
 
 Clonar el repositorio:
 git clone https://github.com/tomimrc/parcial2Java.git
 
+--
 
-Crear la base de datos:
+#### Crear la base de datos:
 
 sql
 
@@ -64,9 +69,9 @@ CREATE TABLE pedido (
     FOREIGN KEY (id_producto) REFERENCES producto(id));
 
 
+--
 
-
-Configurar los parámetros de conexión 
+#### Configurar los parámetros de conexión 
 
 private static final String URL = "jdbc:mysql://localhost:3306/empresa_pedidos";
 private static final String USER = "";
