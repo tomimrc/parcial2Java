@@ -35,10 +35,9 @@ Conexión JDBC configurada (url, user, password)
 
 #### Configuración inicial
 
-
 Clonar el repositorio:
 git clone https://github.com/tomimrc/parcial2Java.git
---
+
 
 #### Crear la base de datos:
 
@@ -48,7 +47,7 @@ sql
 CREATE DATABASE IF NOT EXISTS empresa_pedidos;
 USE empresa_pedidos;
 
--- Tabla: producto
+Tabla: producto
 CREATE TABLE producto (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre VARCHAR(100) NOT NULL,
@@ -56,7 +55,7 @@ CREATE TABLE producto (
     precio DECIMAL(10,2) NOT NULL
 );
 
--- Tabla: pedido
+Tabla: pedido
 CREATE TABLE pedido (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nombre_cliente VARCHAR(100) NOT NULL,
