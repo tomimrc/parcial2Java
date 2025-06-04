@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    // Log4j API (the interfaces you code against)
+    implementation 'org.apache.logging.log4j:log4j-api:2.23.1'
+
+    // Log4j Core (the actual implementation)
+    implementation 'org.apache.logging.log4j:log4j-core:2.23.1'
+}
+
+test {
+    useJUnitPlatform()
+}
