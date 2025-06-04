@@ -13,7 +13,6 @@ JDBC
 Gradle
 
 IDE sugerido: IntelliJ / Eclipse / NetBeans
-
 --
 
 ### 🗃️ Funcionalidades principales
@@ -32,7 +31,6 @@ Java 17 o superior
 MySQL Server (local o remoto)
 
 Conexión JDBC configurada (url, user, password)
-
 --
 
 #### Configuración inicial
@@ -40,7 +38,6 @@ Conexión JDBC configurada (url, user, password)
 
 Clonar el repositorio:
 git clone https://github.com/tomimrc/parcial2Java.git
-
 --
 
 #### Crear la base de datos:
@@ -67,8 +64,6 @@ CREATE TABLE pedido (
     fecha DATE NOT NULL,
     cantidad INT NOT NULL,
     FOREIGN KEY (id_producto) REFERENCES producto(id));
-
-
 --
 
 #### Configurar los parámetros de conexión 
