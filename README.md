@@ -63,7 +63,6 @@ CREATE TABLE pedido (
     fecha DATE NOT NULL,
     cantidad INT NOT NULL,
     FOREIGN KEY (id_producto) REFERENCES producto(id));
---
 
 #### Configurar los parámetros de conexión 
 
